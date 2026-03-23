@@ -43,12 +43,16 @@ function cargarTema(ruta, liElem) {
         }
     }
 
-    // 3) cargar el contenido en el visor (iframe)
+   // 3) construir ruta correcta para local o GitHub Pages
+    const basePath = window.location.hostname.includes("github.io")
+        ? "/manual-qgis/docs/"
+        : "";
+
+    // 4) cargar el contenido en el visor (iframe)
     const visor = document.getElementById("visor");
     if (visor) {
-        visor.src = ruta;
+        visor.src = basePath + ruta;
     } else {
-        // si usas fetch u otro método, reemplaza aquí
         console.warn("No se encontró #visor para cargar la ruta:", ruta);
     }
 }
