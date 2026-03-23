@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Título del tema</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&family=Georgia&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../tema.css">
+
+</head>
+<body>
+
+  <section class="pagina">
+    <div class="encabezado">
+      <div class="etiqueta">Unidad 2</div>
+      <h1>Sistemas de referencia y proyecciones en SIG</h1>
+      <div class="sublinea"></div>
+    </div>
+
+    <div class="contenido">
+
+  
+
+  <p>Para trabajar correctamente con información geográfica, es necesario definir cómo se ubican los datos en el espacio. Esto se logra mediante los sistemas de referencia espacial.</p>
+
+  <div class="nota">
+    Un sistema de referencia espacial define dónde está un dato en la Tierra.
+  </div>
+
+  <h2>¿Qué es el EPSG?</h2>
+
+  <p>El <strong>EPSG</strong> es un sistema de códigos que permite identificar de forma única los sistemas de referencia espacial utilizados en los SIG.</p>
+
+  <p>Estos códigos facilitan que diferentes usuarios y programas trabajen con la misma referencia espacial sin confusiones.</p>
+
+  <div class="sabias">
+    ¿Sabías que el sistema EPSG surgió en la industria petrolera para estandarizar datos geográficos?
+  </div>
+
+  <p>Hoy en día, el catálogo EPSG es mantenido por la <strong>IOGP</strong> y se utiliza a nivel mundial.</p>
+
+  <p>Puedes consultar estos códigos en:</p>
+
+  <ul>
+    <li><a href="https://epsg.org" target="_blank">https://epsg.org</a></li>
+    <li><a href="https://epsg.io" target="_blank">https://epsg.io</a></li>
+  </ul>
+
+  <h2>Códigos EPSG comunes en México</h2>
+
+  <p>Algunos de los sistemas de referencia más utilizados en México se muestran a continuación:</p>
+
+  <div class="tabla-contenedor">
+    <table>
+      <thead>
+        <tr>
+          <th>Nombre del SRC</th>
+          <th>Código EPSG</th>
+          <th>Tipo</th>
+          <th>Uso principal</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>WGS 84</td>
+          <td>4326</td>
+          <td>Geográfica</td>
+          <td>Datos globales, GPS</td>
+        </tr>
+        <tr>
+          <td>UTM zona 11N</td>
+          <td>32611</td>
+          <td>UTM</td>
+          <td>Baja California</td>
+        </tr>
+        <tr>
+          <td>UTM zona 12N</td>
+          <td>32612</td>
+          <td>UTM</td>
+          <td>Sonora, Chihuahua</td>
+        </tr>
+        <tr>
+          <td>UTM zona 13N</td>
+          <td>32613</td>
+          <td>UTM</td>
+          <td>Centro-norte</td>
+        </tr>
+        <tr>
+          <td>UTM zona 14N</td>
+          <td>32614</td>
+          <td>UTM</td>
+          <td>Centro del país</td>
+        </tr>
+        <tr>
+          <td>UTM zona 15N</td>
+          <td>32615</td>
+          <td>UTM</td>
+          <td>Península de Yucatán</td>
+        </tr>
+        <tr>
+          <td>NAD27 / UTM 13N</td>
+          <td>26713</td>
+          <td>UTM</td>
+          <td>Datos históricos</td>
+        </tr>
+        <tr>
+          <td>NAD27 / UTM 14N</td>
+          <td>26714</td>
+          <td>UTM</td>
+          <td>Datos históricos</td>
+        </tr>
+        <tr>
+          <td>ITRF 2008</td>
+          <td>5332</td>
+          <td>Geográfica</td>
+          <td>GNSS moderno</td>
+        </tr>
+        <tr>
+          <td>LCC México</td>
+          <td>6372</td>
+          <td>Lambert</td>
+          <td>Cartografía INEGI</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</div>
+
+  </section>
+
+</body>
+</html>

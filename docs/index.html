@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Manual de QGIS</title>
+  <link rel="stylesheet" href="estilo.css">
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+
+  <!-- PANEL IZQUIERDO -->
+  <nav class="sidebar">
+
+    <h2>Manual QGIS</h2>
+
+    <ul class="tree">
+
+      <!-- Unidad 1-->
+      <li class="unidad">
+        <div class="unidad-titulo" onclick="toggle(this)">
+          <img src="img/carpeta_c.png" class="icono">
+          Unidad 1. Presentación
+        </div>
+
+        <ul class="subtemas">
+          <li onclick="cargarTema('temas/fol1/1_portada.html',this)">Portada</li>
+          <li onclick="cargarTema('temas/fol1/2_uni.html',this)">Presentación</li>
+          <li onclick="cargarTema('temas/fol1/3_uni.html', this)">Introducción a los SIG</li>
+          <li onclick="cargarTema('temas/fol1/4_uni.html', this)">Descarga de QGIS</li>
+          <li onclick="cargarTema('temas/fol1/5_uni.html', this)">Iniciando con QGIS </li>
+        </ul>
+      </li>
+
+      <!-- Unidad 2 Sistemas de referencia y proyecciones en SIG-->
+      <li class="unidad">
+        <div class="unidad-titulo" onclick="toggle(this)">
+          <img src="img/carpeta_c.png" class="icono">
+          Unidad 2. Sistemas de Referencia y proyecciones en SIG
+        </div>
+
+        <ul class="subtemas">
+          <li onclick="cargarTema('temas/fol2/1_uni.html', this)">¿Qué es el EPSG?</li>
+          <li onclick="cargarTema('temas/fol2/2_uni.html', this)">Compatibilidad de proyecciones entre software SIG</li>
+          <li onclick="cargarTema('temas/fol2/3_uni.html', this)">¿Las proyecciones del INEGI son las mismas que las UTM WGS84?</li>
+          <li onclick="cargarTema('temas/fol2/4_uni.html', this)">¿Cuándo usar coordenadas UTM y cuándo geográficas?</li>
+
+        </ul>
+      </li>
+
+      <!-- Unidad 3 Estructura de un proyecto SIG-->
+      <li class="unidad">
+        <div class="unidad-titulo" onclick="toggle(this)">
+          <img src="img/carpeta_c.png" class="icono">
+          Unidad 3. Estructura de un proyecto SIG
+        </div>
+        <ul class="subtemas">
+          <li onclick="cargarTema('temas/fol3/1_uni.html', this)">Estructura de un proyecto SIG</li>
+          <li onclick="cargarTema('temas/fol3/2_uni.html', this)">Recomendaciones clave para organizar tu SIG antes de comenzar:</li>
+           <li onclick="cargarTema('temas/fol3/3_uni.html', this)">Datos del curso</li>
+        </ul>
+      </li>
+
+      <!-- Unidad 4 Iniciando un proyecto desde cero en QGIS-->
+      <li class="unidad">
+        <div class="unidad-titulo" onclick="toggle(this)">
+          <img src="img/carpeta_c.png" class="icono">
+          Unidad 4. Iniciando un proyecto en QGIS
+        </div>
+        <ul class="subtemas">
+          <li onclick="cargarTema('temas/fol4/1_uni.html', this)">Iniciando un proyecto desde cero en QGIS</li> 
+          <li onclick="cargarTema('temas/fol4/2_uni.html', this)">Configuraciones</li> 
+          <li onclick="cargarTema('temas/fol4/3_uni.html', this)">Activación de complementos, paneles y herramientas</li>  
+        </ul>
+      </li>
+
+      <!-- Unidad 5 Iniciando un proyecto desde cero en QGIS-->
+      <li class="unidad">
+        <div class="unidad-titulo" onclick="toggle(this)">
+          <img src="img/carpeta_c.png" class="icono">
+          Unidad 5. Introducción a los datos geoespaciales
+        </div>
+        <ul class="subtemas">
+          <li onclick="cargarTema('temas/fol5/1_uni.html', this)">Datos vectoriales (puntos, líneas y polígonos)</li> 
+          <li onclick="cargarTema('temas/fol5/2_uni.html', this)">Datos tabulares</li>  
+          <li onclick="cargarTema('temas/fol5/3_uni.html', this)">Datos raster (imágenes)</li>  
+          <li onclick="cargarTema('temas/fol5/4_uni.html', this)">Consultas espaciales y por atributos</li>  
+        </ul>
+      </li>
+
+      <!-- Unidad 6 Introducción a los datos geoespaciales-->
+      <li class="unidad">
+        <div class="unidad-titulo" onclick="toggle(this)">
+          <img src="img/carpeta_c.png" class="icono">
+          Unidad 6. Símbolos y colores
+        </div>
+        <ul class="subtemas">
+          <li onclick="cargarTema('temas/fol6/1_uni.html', this)">Símbolos y colores</li> 
+          <li onclick="cargarTema('temas/fol6/2_uni.html', this)">Aplicar una rampa de colores</li> 
+          <li onclick="cargarTema('temas/fol6/3_uni.html', this)">Crear una simbología basada en reglas</li>  
+          <li onclick="cargarTema('temas/fol6/4_uni.html', this)">Creación y edición de estilos</li>  
+          <li onclick="cargarTema('temas/fol6/5_uni.html', this)">Consultas espaciales y por atributos</li>  
+        </ul>
+      </li>
+
+      <!-- Unidad 7 Símbolos y colores-->
+      <li class="unidad">
+        <div class="unidad-titulo" onclick="toggle(this)">
+          <img src="img/carpeta_c.png" class="icono">
+          Unidad 7. Producto cartográfico
+        </div>
+        <ul class="subtemas">
+          <li onclick="cargarTema('temas/fol7/1_uni.html', this)">Producto cartográfico</li> 
+          <li onclick="cargarTema('temas/fol7/2_uni.html', this)">Herramientas para la creación de un mapa final</li> 
+          <li onclick="cargarTema('temas/fol7/3_uni.html', this)">Exportar e imprimir el mapa final</li>  
+          <li onclick="cargarTema('temas/fol7/4_uni.html', this)">Vista práctica con un ejemplo temático</li>  
+          
+        </ul>
+      </li>
+
+      <!-- Unidad 8 Producto cartográfico-->
+      <li class="unidad">
+        <div class="unidad-titulo" onclick="toggle(this)">
+          <img src="img/carpeta_c.png" class="icono">
+          Unidad 8. Conclusiones
+        </div>
+        <ul class="subtemas">
+          <li onclick="cargarTema('temas/fol8/1_uni.html', this)">Conclusiones</li> 
+         
+          
+        </ul>
+      </li>
+
+      <!-- Unidad 9 Conclusiones--> 
+      <li class="unidad">
+        <div class="unidad-titulo" onclick="toggle(this)">
+          <img src="img/carpeta_c.png" class="icono">
+          Unidad 9. Fuentes de consulta en línea
+        </div>
+        <ul class="subtemas">
+          <li onclick="cargarTema('temas/fol9/1_uni.html', this)">Download</li> 
+          <li onclick="cargarTema('temas/fol9/2_uni.html', this)">Bibliografia</li> 
+        </ul>
+      </li>
+
+    </ul>
+
+  </nav>
+
+  <!-- Unidad 9 bibliografia y fuentes-->
+   <!-- PANEL DERECHO -->
+  <main class="contenido">
+    <iframe id="visor" src="temas/fol1/1_portada.html"></iframe>
+  </main>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
