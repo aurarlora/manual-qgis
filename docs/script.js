@@ -44,15 +44,25 @@ function cargarTema(ruta, liElem) {
     }
 
    // 3) construir ruta correcta para local o GitHub Pages
-    const basePath = window.location.hostname.includes("github.io")
-        ? "/manual-qgis/"
-        : "";
+    //const basePath = window.location.hostname.includes("github.io")
+   //     ? "/manual-qgis/"
+    //    : "";
 
     // 4) cargar el contenido en el visor (iframe)
-    const visor = document.getElementById("visor");
+    //const visor = document.getElementById("visor");
+    //if (visor) {
+      //  visor.src = basePath + ruta;
+    //} else {
+      //  console.warn("No se encontró #visor para cargar la ruta:", ruta);
+    //}
+
+     const visor = document.getElementById("visor");
     if (visor) {
-        visor.src = basePath + ruta;
+        visor.src = ruta;
     } else {
+        // si usas fetch u otro método, reemplaza aquí
         console.warn("No se encontró #visor para cargar la ruta:", ruta);
     }
+
+    
 }
