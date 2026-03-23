@@ -45,7 +45,7 @@ function cargarTema(ruta, liElem) {
 
    // 3) construir ruta correcta para local o GitHub Pages
     const basePath = window.location.hostname.includes("github.io")
-        ? "/manual-qgis/docs/"
+        ? "/manual-qgis/"
         : "";
 
     // 4) cargar el contenido en el visor (iframe)
