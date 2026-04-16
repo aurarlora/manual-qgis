@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -69,76 +68,5 @@
   </section>
 
 </body>
-=======
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Título del tema</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&family=Georgia&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="../tema.css">
-
-</head>
-<body>
-
-  <section class="pagina">
-    <div class="encabezado">
-      <div class="etiqueta">Unidad 2</div>
-      <h1>¿Las proyecciones del INEGI son las mismas que las UTM WGS84?</h1>
-      <div class="sublinea"></div>
-    </div>
- <div class="contenido">
-
-
-  <p>No exactamente. Aunque ambos utilizan la proyección UTM, <strong>INEGI no usa WGS84</strong>, sino un sistema más preciso llamado <strong>ITRF2008</strong>.</p>
-
-  <div class="nota">
-    UTM puede ser la misma, pero el datum (referencia) cambia.
-  </div>
-
-  <p>El sistema <strong>ITRF2008</strong> considera que la Tierra no es estática. Las placas tectónicas se mueven, y eso provoca que las coordenadas cambien ligeramente con el tiempo.</p>
-
-  <p>Por esta razón, coordenadas calculadas en distintos años pueden presentar diferencias de hasta <strong>30 cm</strong> en gran parte del país, e incluso cerca de <strong>1 metro</strong> en zonas como Baja California.</p>
-
-  <figure class="figura">
-    <img src="img/placas_mexico_mejorada.png" alt="Movimiento de placas tectónicas en México">
-    <figcaption>Desplazamiento de las placas tectónicas en México</figcaption>
-  </figure>
-
-  <div class="ejemplo">
-    El mismo punto puede tener coordenadas ligeramente distintas dependiendo del año y del sistema de referencia utilizado.
-  </div>
-
-  <p>El uso de ITRF2008 permite mayor precisión y compatibilidad con sistemas GNSS modernos (GPS de alta precisión).</p>
-
-  <h2>Herramientas del INEGI</h2>
-
-  <p>INEGI proporciona herramientas para transformar coordenadas entre distintos sistemas:</p>
-
-  <ul>
-    <li><a href="https://www.inegi.org.mx/app/geo2/coordenadasGeoRGNA/" target="_blank">Consulta de coordenadas</a></li>
-    <li><a href="https://www.inegi.org.mx/app/geo2/traninv/" target="_blank">Transformación de coordenadas</a></li>
-    <li><a href="https://www.inegi.org.mx/app/geo2/tranitrf/inicio.jsp" target="_blank">Herramienta TRANITRF</a></li>
-  </ul>
-
-  <h2>ITRF2008 en QGIS</h2>
-
-  <p>QGIS ya incluye estos sistemas de referencia. Puedes encontrarlos fácilmente buscando <strong>"Mexico ITRF"</strong> en la selección de SRC.</p>
-
-  <figure class="figura">
-    <img src="img/itrfMex.png" alt="Sistema ITRF2008 en QGIS">
-    <figcaption>Selección del sistema ITRF2008 en QGIS</figcaption>
-  </figure>
-
-</div>
-
-    
-
-  </section>
-
-</body>
->>>>>>> 6e24d7eb3f550b3a24fa60bc65de62a39f105d13
 </html>
