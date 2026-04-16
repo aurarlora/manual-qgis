@@ -1,0 +1,228 @@
+/* ===== ESTILO GENERAL ===== */
+html, body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #f7f9fb, #eef2f6);
+  font-family: Arial, sans-serif;
+  color: #2f3a44;
+}
+
+/* CENTRAR CONTENIDO */
+body {
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+
+/* CONTENEDOR PRINCIPAL */
+.pagina {
+  width: 90%;
+  max-width: 950px;
+  background: #ffffff;
+  border: 1px solid #d8dee6;
+  border-radius: 18px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  padding: 50px 60px;
+  box-sizing: border-box;
+}
+
+/* ===== ENCABEZADO ===== */
+.encabezado {
+  margin-bottom: 30px;
+}
+
+.etiqueta {
+  font-family: 'Comic Neue', cursive;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #6f7f90;
+  margin-bottom: 8px;
+}
+
+h1 {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 2.1rem;
+  color: #233142;
+  line-height: 1.2;
+}
+
+.sublinea {
+  width: 100px;
+  height: 4px;
+  background-color: #7f9db9;
+  border-radius: 5px;
+  margin-top: 14px;
+}
+
+/* ===== CONTENIDO ===== */
+.contenido {
+  font-size: 1.08rem;
+  line-height: 1.9;
+  color: #334455;
+  text-align: justify;
+}
+
+.contenido p {
+  margin-top: 0;
+  margin-bottom: 22px;
+}
+
+/* SUBTÍTULOS */
+.contenido h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.45rem;
+  color: #2b4054;
+  margin-top: 40px;
+  margin-bottom: 14px;
+}
+
+.contenido h3 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.2rem;
+  color: #35506a;
+  margin-top: 28px;
+  margin-bottom: 10px;
+}
+
+/* LISTAS */
+.contenido ul,
+.contenido ol {
+  margin-bottom: 22px;
+  padding-left: 28px;
+}
+
+.contenido li {
+  margin-bottom: 8px;
+}
+
+/* ===== BLOQUES ESPECIALES ===== */
+.nota {
+  background: #f4f8fb;
+  border-left: 5px solid #8aa8c1;
+  padding: 14px 16px;
+  border-radius: 10px;
+  margin: 24px 0;
+  color: #3a4e61;
+}
+
+.ejemplo {
+  background: #faf7f2;
+  border-left: 5px solid #c9a46b;
+  padding: 14px 16px;
+  border-radius: 10px;
+  margin: 24px 0;
+  color: #4c4336;
+}
+
+/* ===== FIGURAS ===== */
+.figura {
+  margin: 30px 0;
+  text-align: center;
+}
+
+.figura img {
+  max-width: 100%;
+  border-radius: 12px;
+  border: 1px solid #d6dde5;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+}
+
+.figura figcaption {
+  margin-top: 10px;
+  font-size: 0.95rem;
+  color: #6a7988;
+  font-style: italic;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  body {
+    padding: 20px 12px;
+  }
+
+  .pagina {
+    width: 100%;
+    padding: 30px 22px;
+  }
+
+  h1 {
+    font-size: 1.7rem;
+  }
+
+  .contenido {
+    font-size: 1rem;
+    line-height: 1.75;
+  }
+}
+
+.sabias {
+  background: #f0f7ff;
+  border-left: 5px solid #5fa8d3;
+  padding: 14px 16px;
+  border-radius: 10px;
+  margin: 24px 0;
+  font-family: 'Comic Neue', cursive;
+  color: #2c4a63;
+  font-size: 1rem;
+}
+
+.boton {
+  display: inline-block;
+  padding: 12px 20px;
+  background-color: #7f9db9;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 700;
+  font-family: 'Comic Neue', cursive;
+  transition: background 0.2s ease;
+}
+
+.boton:hover {
+  background-color: #5f7f9f;
+}
+
+
+/* ===== estilos de la tabla:unidad2 pag 1_uni ===== */
+
+.tabla-contenedor {
+  overflow-x: auto;
+  margin: 25px 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+th, td {
+  border: 1px solid #d8dee6;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #eef3f7;
+  font-weight: 700;
+}
+
+tr:nth-child(even) {
+  background-color: #f9fbfd;
+}
+
+/*palomitas*/
+
+.ok {
+  color: #2e7d32; /* verde */
+  font-weight: bold;
+  margin-left: 6px;
+}
+
+.error {
+  color: #c62828; /* rojo */
+  font-weight: bold;
+  margin-left: 6px;
+}

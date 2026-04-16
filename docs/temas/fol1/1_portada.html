@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fundamentos de QGIS</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&family=Georgia&display=swap" rel="stylesheet">
+
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      background: linear-gradient(to bottom, #f7f9fb, #eef2f6);
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Arial, sans-serif;
+      color: #2f3a44;
+    }
+
+    .portada {
+      width: 85%;
+      max-width: 950px;
+      min-height: 78vh;
+      background: white;
+      border: 1px solid #d8dee6;
+      border-radius: 18px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+      box-sizing: border-box;
+      padding: 55px 70px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .encabezado {
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    .sublinea {
+      width: 120px;
+      height: 4px;
+      background-color: #7f9db9;
+      margin: 18px auto 0 auto;
+      border-radius: 5px;
+    }
+
+    .titulo {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 2.2rem;
+      line-height: 1.35;
+      font-weight: 700;
+      color: #233142;
+      margin: 0;
+    }
+
+    .bloque-central {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      flex: 1;
+      text-align: center;
+      padding: 30px 0;
+    }
+
+    .marco-imagen {
+      width: 210px;
+      height: 210px;
+      border: 2px dashed #b8c4d1;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #8091a3;
+      font-family: 'Comic Neue', cursive;
+      font-size: 1.1rem;
+      background-color: #f8fbfd;
+      margin-bottom: 35px;
+    }
+
+    .autor {
+      font-family: 'Comic Neue', cursive;
+      font-size: 1.2rem;
+      color: #3d4c5a;
+      margin-bottom: 10px;
+    }
+
+    .correo {
+      font-family: 'Comic Neue', cursive;
+      font-size: 1.05rem;
+      color: #5f6f80;
+      margin-bottom: 20px;
+    }
+
+    .fecha {
+      font-family: 'Comic Neue', cursive;
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: #4a5a6a;
+    }
+
+    .pie {
+      text-align: center;
+      font-family: 'Comic Neue', cursive;
+      font-size: 1rem;
+      color: #748394;
+      padding-top: 15px;
+      border-top: 1px solid #e3e8ee;
+    }
+
+    @media (max-width: 768px) {
+      .portada {
+        width: 92%;
+        padding: 35px 25px;
+      }
+
+      .titulo {
+        font-size: 1.7rem;
+      }
+
+      .marco-imagen {
+        width: 160px;
+        height: 160px;
+        font-size: 0.95rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="portada">
+    
+    <div class="encabezado">
+      <h1 class="titulo">Fundamentos de QGIS para la Integración y Gestión de Información Geoespacial</h1>
+      <div class="sublinea"></div>
+    </div>
+
+    <div class="bloque-central">
+      <div class="marco-imagen">
+        Imagen de portada
+      </div>
+
+      <div class="autor">Dra. Aura Ramos Lora</div>
+      <div class="correo">aurarlora@sgm.gob.mx</div>
+      <div class="fecha">Año 2026</div>
+    </div>
+
+    <div class="pie">
+      Manual web de consulta y aprendizaje
+    </div>
+
+  </section>
+
+</body>
+</html>
