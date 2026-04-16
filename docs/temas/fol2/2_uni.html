@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -75,4 +76,83 @@ El código EPSG es el idioma común entre los software SIG.
   </section>
 
 </body>
+=======
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Título del tema</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&family=Georgia&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../tema.css">
+
+</head>
+<body>
+
+  <section class="pagina">
+    <div class="encabezado">
+      <div class="etiqueta">Unidad 2</div>
+     <h1>Compatibilidad de proyecciones entre software SIG</h1>
+      <div class="sublinea"></div>
+    </div>
+<div class="contenido">
+
+  
+
+  <p>Aunque <strong>ArcGIS</strong> y <strong>QGIS</strong> pueden mostrar nombres distintos para los sistemas de coordenadas, ambos utilizan la base de datos <strong>EPSG</strong> como referencia.</p>
+
+  <div class="nota">
+    Esto significa que los datos pueden compartirse entre software sin perder su ubicación espacial.
+  </div>
+
+  <p>Por ejemplo, un archivo exportado desde ArcGIS con extensión <code>.prj</code> puede ser leído sin problema en QGIS, y viceversa.</p>
+
+  <h2>Ejemplos de equivalencia</h2>
+
+  <div class="tabla-contenedor">
+    <table>
+      <thead>
+        <tr>
+          <th>Descripción</th>
+          <th>EPSG</th>
+          <th>Nombre en ESRI</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>WGS 84 (lat/lon)</td>
+          <td>4326</td>
+          <td>GCS_WGS_1984</td>
+        </tr>
+        <tr>
+          <td>UTM zona 14N (WGS84)</td>
+          <td>32614</td>
+          <td>WGS_1984_UTM_Zone_14N</td>
+        </tr>
+        <tr>
+          <td>NAD27 UTM zona 13N</td>
+          <td>26713</td>
+          <td>NAD_1927_UTM_Zone_13N</td>
+        </tr>
+        <tr>
+          <td>ITRF 2008</td>
+          <td>5332</td>
+          <td>ITRF_2008</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="ejemplo">
+El código EPSG es el idioma común entre los software SIG.
+</div>
+
+</div>
+  
+  </section>
+
+</body>
+>>>>>>> 6e24d7eb3f550b3a24fa60bc65de62a39f105d13
 </html>

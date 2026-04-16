@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -88,4 +89,96 @@ iframe {
   width: 100%;
   height: 100%;
   border: none;
+=======
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+/* PANEL IZQUIERDO */
+.sidebar {
+  width: 280px;
+  background-color: #f7f7f7;
+  padding: 20px 15px;
+  overflow-y: auto;
+  border-right: 1px solid #ddd;
+  font-family: 'Comic Neue', cursive;
+}
+
+.sidebar h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+/* ÁRBOL */
+.tree {
+  list-style: none;
+  padding: 0;
+}
+
+/* UNIDAD */
+.unidad {
+  margin-bottom: 15px; /* 👈 espacio entre carpetas */
+}
+
+.unidad-titulo {
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 6px 8px;
+  border-radius: 6px;
+  transition: background 0.2s;
+}
+
+.unidad-titulo:hover {
+  background-color: #eaeaea;
+}
+
+/* ICONO */
+.icono {
+  width: 18px;
+  margin-right: 10px;
+  transition: transform 0.2s;
+}
+
+/* SUBTEMAS */
+.subtemas {
+  list-style: none;
+  padding-left: 28px;
+  margin-top: 5px;
+  display: none;
+}
+
+.subtemas li {
+  cursor: pointer;
+  padding: 4px 6px;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+
+.subtemas li:hover {
+  background-color: #e0e0e0;
+}
+
+
+
+
+
+/* PANEL DERECHO */
+.contenido {
+  flex: 1;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+>>>>>>> 6e24d7eb3f550b3a24fa60bc65de62a39f105d13
 }
